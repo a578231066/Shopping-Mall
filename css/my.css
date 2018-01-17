@@ -1,0 +1,163 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.7.29
+    最新更新:2017.7.31
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间: 
+*/
+body{background: #F7F3F7;}
+/* 头部 */
+header{width: 100%; height: 130px; background: url(../images/个人中心/gerenTopBg.jpg) no-repeat; background-size: 100%;}
+header ul{width: 90%; margin: 0 auto;}
+header li{ width: 32%; height: 130px; line-height: 120px; color:#fff; font-size: 1.4em; float: left; letter-spacing: 2px;}
+header li img{width: 80px; height: 80px; border:3px solid #EF9492; border-radius:40px;}
+
+/* 内容部分 */
+.main .dingdan{width: 100%; height: 130px; background: #fff;}
+.main .dingdan .top ul{ height: 40px; line-height: 40px; padding: 0 10px; border-bottom:1px solid #F3F1F3; letter-spacing: 1px;}
+.main .dingdan .top li.fl{font-size: 1.3em; color: #121612; font-weight: 500;}
+.main .dingdan .top li.fr a{ color: #B2B1B2; font-size: 1.1em;}
+
+.main .dingdan .down{width: 100%; height: 100px;}
+.main .dingdan .down li{ width: 15%; margin-left: 4%; margin-top: 20px; float: left; text-align: center;}
+.main .dingdan .down li img{width: 40px; height: 30px;}
+.main .dingdan .down li p{color: #131513; font-size: 1.1em; margin-top: 5px;}
+
+/* 消息 */
+.main .xiaoxi{width: 100%; height: 110px; padding-top: 15px;}
+.main .xiaoxi .news{width: 100%; height: 78px; background: #fff;}
+.main .xiaoxi .news li{width: 20%; margin-left: 4%; padding-top: 10px; float: left; text-align: center;}
+.main .xiaoxi .news li p{color: #111511;}
+.main .xiaoxi .news li img{width: 40px; height: 40px;}
+
+/* 设置 */
+.main .shezhi{height: 460px;}
+.main .shezhi li{width: 100%; height: 50px; line-height: 50px; padding-left: 2%; border-bottom:1px solid #E8E4E8; background: #fff; font-size: 1.2em;}
+.main .shezhi li img{width: 30px; height: 30px;}
+.main .shezhi li span{ margin-left: 10px; color: #151915;}
+.main .shezhi li span.fr{ font-size: 1.4em; padding-right: 10px; color: #9EA09E;}
+.main .shezhi li.none{border:none;}
+.main .shezhi p{width: 100%; height: 35px; background: #fff; line-height: 35px; text-align: center; font-size: 1.2em; margin-top: 5px; }
+
+
+/* footer */
+footer{width: 100%; height: 60px; border-top:1px solid #F4F2F4; background: #fff; position: fixed; bottom: 0; z-index: 10;}
+footer ul li{ float: left; width: 20%; text-align: center; font-size: 1em; padding-top: 10px;}
+footer ul li span{ font-size: 2em;}
+footer ul li a{ color: #636563;}
+footer ul li.home a{ color: #E72C21;}
+
+
+/* 遮挡 */
+.zhedang{width: 100%; position:fixed; top: 0; left: 0; background: #fff; z-index: 100; display: none;}
+.zhedang p{height: 85px; line-height: 50px; padding-left: 5%; color: #1278DD; font-size: 1.1em; letter-spacing: 2px;}
+.zhedang li{width: 100%; text-align: center;}
+.zhedang li.one{height: 60px; line-height: 40px; color: #797979;}
+.zhedang li button{ width: 80%; height: 40px; background: #08C302;}
+.zhedang li button img{width: 40px; height: 30px;}
+.zhedang li.two{height: 60px; line-height: 80px; font-size: 0.4em; color: #ACACAC;}
+.zhedang li a{color: #1378D7;}
+.zhedang .di{width: 100%; text-align: center; color: #A8A8A8; letter-spacing: 2px; position:fixed; bottom:50px; left: 0;}
+
+/* 其他方式登录 */
+.blac{width: 100%; background:rgba(0,0,0,.5); position:fixed; top:0; left: 0; z-index: 1001; display: none;}
+.qita_down{width: 100%; position:fixed; background: #F2F2F2;  bottom:0; z-index: 1002; display: none;}
+.qita_down li{width: 100%; height: 40px; line-height: 40px; text-align: center; background: #fff;border-bottom:1px solid #F1F1F1;}
+.qita_down a img{width: 25px; height: 25px; margin-right: 10px;}
+.qita_down a span{width: 60px; height: 25px; display: inline-block; text-align: left; margin-right: 10px;}
+.qita_down li.end{ margin-top: 10px;}
+
+/* 退出登录 */
+.endBg{width: 100%; background: rgba(0,0,0,.5); position:fixed; top: 0; left: 0; z-index: 99; display: none;}
+.tuichu{ width: 60%; height: 100px; background: #fff; position:fixed; top: 200px; left: 20%; z-index: 100; border-radius:5px; display: none;}
+.tuichu p{width: 100%; height: 50px; text-align: center; line-height: 50px; font-size: 1.3em; color: #000; letter-spacing: 1px; border-bottom:1px solid #ccc;}
+.tuichu div{width: 70%; height: 30px; margin:10px auto;}
+.tuichu button{ width: 50px; height: 30px; border-radius: 2px; border:none; color: #fff; letter-spacing: 1px; box-shadow: 1px 1px 1px #000;}
+.tuichu button.sure{background: #DD514C; color: #fff; text-shadow: 1px 1px 1px #000; }
+.tuichu button.nonono{background: #eee; float: right; color: #000; text-shadow: 1px 1px 1px #ccc;}
+
+
+/* 手机登录 */
+.telePhone{width: 100%; background: #F2F2F2; position:fixed; top: 0; left: 0; z-index: 1002; display: none;}
+.telePhone .telePhone_top{width: 100%; height: 50px; line-height: 50px; text-align: center; background: #F8F8F8; font-size: 1.4em; padding-left:4%; border-bottom:1px solid #E9E9E9;}
+
+.telePhone .telePhone_down{width: 100%; height: 105px; border-top:1px solid #DCDCDC; border-bottom:1px solid #DCDCDC; background: #fff; margin-top: 10px;}
+.telePhone .telePhone_down .tel{width: 90%; margin:0 auto;}
+.telePhone .telePhone_down .tel div{ height: 50px; line-height: 50px;}
+.telePhone .telePhone_down span{display: inline-block; width: 25%; color: #333;}
+.telePhone .telePhone_down .tel input{height: 30px; border:none;} 
+.telePhone .telePhone_down .tel button{height: 30px; line-height: 0; margin-left: 5px; text-align: center; background: none; border:none; pointer-events:none; color:#bbb;}
+.telePhone .telePhone_down .tel .phone{border-bottom:1px solid #D3D3D3;}
+.telePhone .telePhone_down .tel .phone input{width: 75%; height: 30px;}
+.telePhone .telePhone_down .tel .code input{ width: 35%;}
+.telePhone .telePhone_down .tel .code button{width: 35%;border-left:1px solid #ddd;}
+.telePhone .telePhone_down .sign{width: 90%; margin:20px auto; margin-bottom: 10px;}
+.telePhone .telePhone_down .sign button{width: 100%;}
+.telePhone .telePhone_down .sign div{ margin-top: 10px;}
+.telePhone .telePhone_down .sign div a{color: #E2352C; text-decoration: underline;}
+
+.shouji{width: 80%; height: 30px; line-height: 30px; background: rgba(0,0,0,.5); position:fixed; bottom:100px; left:10%; color: #fff; text-align: center; border-radius: 5px; font-size: 1.2em; display: none; z-index: 99999;}
+
+/* 验证码 */
+.yanzheng_zd{width: 100%; background: rgba(0,0,0,.4); position:fixed; top: 0; left: 0;}
+.yanzheng{width: 80%; height: 50px; background: #fff; border-radius:5px; position: fixed; top: 200px; left: 10%;}
+.yanzheng input{width: 50%; height: 50px;}
+.yanzheng img{width: 50%; height: 50px; margin-top: -4px;}
+
+/* 服务协议 */
+.fuwu{width: 100%; background: #fff; position:fixed; top:0; left: 0; z-index: 1003; display: none;}
+.fuwu .fuwu_top{width: 100%; height: 50px; line-height: 50px; text-align: center; font-size: 1.4em; padding-left:4%;}
+.fuwu .fuwu_down{ color: #4A4A4A; background: #F2F2F2; overflow-y: auto;}
+.fuwu .fuwu_down .xieyi_top{width: 100%; height: 50px; color: #444; font-size: 1.2em; text-align: center; padding-top: 10px; }
+.fuwu .fuwu_down .xieyi_down{width: 90%; margin:0 auto;}
+.fuwu .fuwu_down .xieyi_down li{ margin-top: 20px;}
+
+/* 手机分辨率兼容 */
+/* iPhone6 */
+@media(min-width:375px){
+    header li{ width: 28%;font-size: 1.6em;}
+}
+
+/* iPhone6 Plus */
+@media(min-width:414px){
+    header li{ width: 26%; font-size: 1.8em;}
+}
+
+/* 600px */
+@media(min-width:600px){
+    header li{ width: 18%; font-size: 1.6em;}
+}
+
+/* S5横屏 */
+@media(min-width:640px){
+    header li{ width: 18%; font-size: 1.6em;}
+}
+
+/* ipad */
+@media(min-width:768px){
+    .tuichu{height: 130px;}
+    .tuichu div{height: 40px; margin:20px auto;}
+    .tuichu button{ width:80px; height: 40px; font-size: 1.2em;}
+}
+
+/* 800px */
+@media(min-width:800px){
+    header li{ width: 14%; font-size: 1.6em;}
+}
+
+/* 1080px */
+@media(min-width:1080px){
+    header li{ width: 12%; font-size: 1.6em;}
+}
+
+/* 1290px */
+@media(min-width:1290px){
+    header li{ width: 14%; font-size: 1.6em;}
+}
+
+/* 1500px */
+@media(min-width:1500px){
+    header li{ width: 8%; font-size: 1.8em;}
+}

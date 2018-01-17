@@ -1,0 +1,21 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.9.4
+    最新更新:2017.9.4
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间: 
+*/
+/* body{background: #F9F9F9;} */
+/* 头部 */
+header{width: 100%; background: #F2F2F2; position:fixed; top: 0; left: 0; z-index: 1002;}
+header .telePhone_top{width: 100%; height: 50px; line-height: 50px; text-align: center; background: #F8F8F8; font-size: 1.4em; padding-right: 9%; border-bottom:1px solid #E9E9E9;}
+header .telePhone_top strong{width: 30px; display: inline-block;}
+header span.fr{ padding: 0; margin-right: -6%; font-size: 0.8em;}
+
+/* 内容 */
+#main{width: 95%; height: auto; margin: 55px auto;}
+#main .neirong div{width: 100%; height: 35px; line-height: 35px; margin-top: 8px; font-size: 1.2em; padding-left: 2%; box-shadow: 1px 1px 1px 1px #888; background: #fff; display: none;}
+#main .tianjia{width: 90%; height: 35px; margin: 15px auto; background: none; border:none; text-align: center; line-height: 30px; font-size: 1.2em; border-radius:5px; box-shadow: 1px 1px 1px 1px #888; cursor:pointer; background: #D61604; color: #fff;}
+#main .tianjia span{ display: inline-block; width: 30px; height: 25px; margin-top: 5px; line-height: 20px; border:1px dashed #fff; font-size: 1.4em; font-weight:bold;}

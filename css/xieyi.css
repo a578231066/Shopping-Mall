@@ -1,0 +1,18 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.8.2
+    最新更新:2017.8.2
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间: 
+*/
+
+/* 服务协议 */
+.fuwu{width: 100%; background: #fff; position:fixed; top:0; left: 0; z-index: 1003;}
+.fuwu .fuwu_top{width: 100%; height: 50px; line-height: 50px; text-align: center; font-size: 1.4em; padding-left:4%;}
+.fuwu .fuwu_down{ color: #4A4A4A; background: #F2F2F2; overflow-y: auto;}
+.fuwu .fuwu_down .xieyi_top{width: 100%; height: 50px; color: #444; font-size: 1.2em; text-align: center; padding-top: 10px; }
+.fuwu .fuwu_down .xieyi_down{width: 90%; margin:0 auto;}
+.fuwu .fuwu_down .xieyi_down li{ margin-top: 20px;}
+

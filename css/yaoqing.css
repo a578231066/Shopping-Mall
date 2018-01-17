@@ -1,0 +1,283 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.8.1
+    最新更新:2017.8.1
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间: 
+*/
+/************************************* 搜索头部 *************************************/
+header{width: 100%; height: 52px; position:fixed; top:0; left: 0; z-index: 9;}
+header .new{width: 100%; height: 50px; line-height: 50px; border-bottom:1px solid #D6D6D6; background: #F8F8F8; text-align: center; font-size: 1.6em;}
+header .new p{ width: 100%; height: 50px;overflow: hidden; white-space: nowrap; text-overflow:ellipsis;}
+header .new p span{ padding:15px 0 0 2%;}
+/************************************* 搜索头部 结束 *************************************/
+
+.main{width: 100%; margin-top: 50px; position:relative;}
+.main img{width: 100%;}
+.main .size_button p.one{position:absolute; top:10px; right: 0; background: #FE8D00; text-align: center; padding:5px 0 5px 5px; font-size: 1.2em; color: #fff; border-top-left-radius:15px; border-bottom-left-radius:15px;}
+.main .size_button p.one span{width: 20px; display: inline-block; border-radius:15px; background: #fff; color: #FE8D00;}
+
+.main .size_button button{ position:absolute; bottom:120px; left: 34%; text-align: center; font-size: 1.4em; padding:10px 10px; background: #FDDE5F; color: #FF0825; border:none; border-radius:5px;}
+
+.main .size_button p.two{position:absolute; bottom: 35px; left: 21%; font-size: 1.4em;}
+.main .size_button p.two span{color: #DE2E25;}
+
+/************************************* 遮挡 *************************************/
+/* 规则 */
+.zhedang{width: 100%; background: rgba(0,0,0,.8); position:fixed; top: 0; left: 0; display: none;}
+.rules{width: 200px; height: 260px; position:fixed; top:150px; left:18%; z-index: 11; border-radius: 5px; background: #fff; display: none;}
+.rules .rules_top{width: 100%; height: 40px; line-height: 40px; text-align: center; border-bottom:1px solid #E8E8E8; font-size: 1.2em;}
+.rules .rules_top span{display: inline-block; width: 20px; height: 20px; line-height: 20px; border-radius:15px; margin-top: -15px; margin-right: -10px; background: #E0E0E0; color: #9C9C9C; font-size: 0.5em;}
+.rules .rules_down{ height: 220px; padding:0 4%; font-size: 0.8em; color: #9A9A9B; overflow: auto;}
+.rules .rules_down p{ margin-top: 10px;}
+
+/* 分享 */
+.zhedang1{ width: 100%; background: rgba(0,0,0,.8); position:fixed; bottom:0; left: 0; display: none;}
+.share{ width: 100%; height: 120px; position: fixed; bottom: 0; left: 0; background: #fff; display: none;}
+.share .share_top{width: 100%; height: 80px; border-bottom:1px solid #CECECE; text-align: center; padding-top: 10px; color: #BAB9BE;}
+.share .share_top span{display: inline-block; width: 40px; height: 40px; background: #48C508; border-radius: 25px;}
+.share .share_top span img{width: 25px; height: 25px; margin-top: 8px;}
+.share .share_down{width: 100%; height: 40px; line-height: 40px; text-align: center; font-size: 1.4em; letter-spacing: 2px;}
+
+/************************************* 遮挡 结束 *************************************/
+
+/* 手机分辨率兼容 */
+/* iPhone5 */
+@media(min-width:320px){
+
+}
+
+/* S5 */
+@media(min-width:360px){
+.main .size_button button{ bottom:120px; left: 33%; padding:10px 20px;}
+.main .size_button p.two{bottom: 40px; left: 26%;}
+
+/* 遮挡 */
+    .rules{width: 230px; height: 280px; position:fixed; top:150px; left:18%;}
+    .rules .rules_down{ height: 240px;}
+}
+
+/* iPhone6 */
+@media(min-width:375px){
+.main .size_button button{ bottom:140px; left: 28%; padding:15px 40px;}
+.main .size_button p.two{ bottom:60px; left: 26%;}
+/* 遮挡 */
+    .rules{width: 230px; height: 280px; position:fixed; top:180px; left:18%;}
+    .rules .rules_down{ height: 240px;}
+}
+
+/* iPhone6 Plus */
+@media(min-width:414px){
+.main .size_button button{bottom:160px; left: 29%; padding:20px 45px;}
+.main .size_button p.two{bottom: 45px; left: 25%; font-size: 1.6em;}
+
+/* 遮挡 */
+    .rules{width: 240px; height: 294px; position:fixed; top:190px; left:20%;}
+    .rules .rules_down{ height: 254px;}
+}
+
+/* 455px */
+@media(min-width:455px){
+.main .size_button button{ bottom:120px; left: 33%; padding:15px 30px; letter-spacing: 2px;}
+.main .size_button p.two{bottom: 40px; left: 27%;}
+/* 遮挡 */
+    .rules{width: 240px; height: 280px; top:200px; left:22%;}
+    .rules .rules_down{ height: 240px;}
+}
+
+/* 500px */
+@media(min-width:500px){
+.main .size_button button{ bottom:120px; left: 34%; padding:15px 30px; letter-spacing: 2px;}
+.main .size_button p.two{bottom: 40px; left: 29%;}
+/* 遮挡 */
+    .rules{width: 260px; height: 300px; top:200px; left:23%;}
+    .rules .rules_down{ height: 260px;}
+}
+
+/* 530px */
+@media(min-width:530px){
+.main .size_button button{left: 35%; padding:15px 30px;}
+.main .size_button p.two{left: 28%; font-size: 1.8em;}
+/* 遮挡 */
+    .rules{width: 260px; height: 300px; top:200px; left:24%;}
+    .rules .rules_down{ height: 260px;}
+}
+
+/* 556px */
+@media(min-width:556px){
+.main .size_button button{left: 35%; padding:15px 30px;}
+.main .size_button p.two{left: 29%; font-size: 1.8em;}
+/* 遮挡 */
+    .rules{width: 270px; height: 310px; top:200px; left:24%; font-size: 1.8em; letter-spacing: 2px;}
+    .rules .rules_down{ height: 260px;}
+    .rules .rules_top{height: 50px; line-height: 50px; font-size: 1.2em;}
+    .rules .rules_top span{ width: 30px; height: 30px; line-height: 30px;}
+}
+
+/* iphone5横屏 */
+@media(min-width:568px){
+
+.main .size_button button{ bottom:58px; left: 39%; padding:10px 15px;}
+.main .size_button p.two{bottom: 18px; left: 33%; font-size: 1.6em;}
+
+/* 遮挡 */
+    .rules{width: 300px; height: 200px; top:100px; left:24%; font-size: 1.8em; letter-spacing: 2px;}
+    .rules .rules_down{ height: 160px;}
+    .rules .rules_top{height: 40px; line-height: 40px; font-size: 1.2em;}
+    .rules .rules_top span{ width: 30px; height: 30px; line-height: 30px;}
+}
+
+/* 580 */
+@media(min-width:580px){
+.main .size_button button{ bottom:120px; left: 36%; padding:15px 30px;}
+.main .size_button p.two{bottom: 45px; left: 29%; font-size: 2em;}
+
+/* 遮挡 */
+    .rules{width: 300px; height: 400px; top:160px; font-size: 2em;}
+    .rules .rules_down{ height: 340px;}
+    .rules .rules_top{height: 60px; line-height: 60px; font-size: 1.5em;}
+    .rules .rules_top span{ width: 40px; height: 40px; line-height: 40px; border-radius: 20px;}
+}
+
+/* S5横屏 */
+@media(min-width:640px){
+.main .size_button button{ bottom:60px; left: 39%; padding:10px 20px;}
+.main .size_button p.two{bottom: 18px; left: 33%; font-size: 1.8em;}
+
+/* 遮挡 */
+    .rules{width: 300px; height: 150px; left:28%;}
+    .rules .rules_top{height: 40px; line-height: 40px; font-size: 1em;}
+    .rules .rules_top span{display: inline-block; width: 20px; height: 20px; line-height: 20px;}
+    .rules .rules_down{ height: 110px;}
+}
+
+/* 690px */
+@media(min-width:690px){
+.main .size_button button{ bottom:160px; left: 35%; padding:22px 35px; font-size: 1.8em;}
+.main .size_button p.two{bottom: 60px; left: 28%; font-size: 2.2em;}
+
+}
+
+/* Nexus6P横屏 */
+@media(min-width:732px){
+
+.main .size_button button{ bottom:70px; left: 38%; padding:15px 30px;}
+.main .size_button p.two{bottom: 20px; left: 36%; font-size: 1.6em;}
+
+/* 遮挡 */
+    .rules{width: 300px; height: 200px; left:28%;}
+    .rules .rules_top{height: 40px; line-height: 40px;}
+    .rules .rules_top span{display: inline-block; width: 30px; height: 30px; line-height: 30px;}
+    .rules .rules_down{ height: 160px;}
+}
+
+/* iPad */
+@media(min-width:768px){
+/* 头部 */
+header{width: 100%; height: 72px; position:fixed; top:0; left: 0; z-index: 9;}
+header .new{width: 100%; height: 70px; line-height: 70px; border-bottom:1px solid #D6D6D6; background: #F8F8F8; text-align: center; font-size: 2em;}
+header .new p span{ padding-top:20px;}
+
+/* 内容 */
+.main{margin-top: 70px;}
+
+.main .size_button p.one{padding:20px 5px 20px 20px; font-size: 1.6em; color: #fff; border-top-left-radius:30px; border-bottom-left-radius:30px;}
+.main .size_button p.one span{width: 20px; display: inline-block; border-radius:15px; background: #fff; color: #FE8D00;}
+
+.main .size_button button{bottom:200px; left: 33%; padding:30px 50px; font-size: 2.4em;}
+.main .size_button p.two{bottom: 90px; left: 30%; font-size: 2.4em;}
+
+/* 遮挡 */
+    .rules{width: 440px; height: 494px; position:fixed; top:230px; left:22%;}
+    .rules .rules_top{width: 100%; height: 60px; line-height: 60px; text-align: center; border-bottom:1px solid #E8E8E8; font-size: 1.5em;}
+    .rules .rules_top span{display: inline-block; width: 40px; height: 40px; line-height: 40px; border-radius:20px; margin-top: -15px; margin-right: -10px; background: #E0E0E0; color: #9C9C9C; font-size: 0.5em;}
+    .rules .rules_down{ height: 434px; font-size: 1.2em; letter-spacing: 2px; line-height: 30px;}
+
+/* 分享 */
+    .share{height: 180px;}
+    .share .share_top{width: 100%; height: 120px; border-bottom:1px solid #CECECE; text-align: center; padding-top: 20px; color: #BAB9BE; font-size: 1.4em;}
+    .share .share_top span{width: 60px; height: 60px; border-radius: 45px; margin-bottom: 5px;}
+    .share .share_top span img{width: 40px; height: 40px;}
+    .share .share_down{ height: 60px; line-height: 60px;font-size: 1.8em;}
+}
+
+/* 800px */
+@media(min-width:800px){
+.main .size_button button{bottom:160px; left: 32%; padding:30px 50px; font-size: 2.4em;}
+.main .size_button p.two{bottom: 80px; left: 30%; font-size: 2.4em;}
+
+/* 遮挡 */
+    .rules{width: 440px; height: 494px; position:fixed; top:230px; left:22%;}
+    .rules .rules_top{width: 100%; height: 60px; line-height: 60px; text-align: center; border-bottom:1px solid #E8E8E8; font-size: 1.5em;}
+    .rules .rules_top span{display: inline-block; width: 40px; height: 40px; line-height: 40px; border-radius:20px; margin-top: -15px; margin-right: -10px; background: #E0E0E0; color: #9C9C9C; font-size: 0.5em;}
+    .rules .rules_down{ height: 434px; font-size: 1.2em; letter-spacing: 2px; line-height: 30px;}
+}
+
+/* 870px */
+@media(min-width:870px){
+.main .size_button button{left: 34%;}
+/* 遮挡 */
+    .rules{top:230px; left:24%;}
+}
+
+/* 950px */
+@media(min-width:950px){
+.main .size_button button{left: 36%;}
+/* 遮挡 */
+    .rules{top:230px; left:26%;}
+}
+
+/* iPad横屏 */
+@media(min-width:1024px){
+/* 内容 */
+.main .size_button button{bottom:140px; left: 37%;}
+.main .size_button p.two{bottom: 60px; left: 33%; font-size: 2.6em;}
+
+/* 遮挡 */
+    .rules{width: 440px; height: 494px; left:28%;}
+    .rules .rules_down{ height: 434px; font-size: 1.2em; letter-spacing: 2px; line-height: 33px;}
+}
+
+/* 1120px */
+@media(min-width:1120px){
+.main .size_button button{bottom:150px; left: 37%; border-radius:10px;}
+}
+
+/* 1240px */
+@media(min-width:1240px){
+.main .size_button button{bottom:150px; left: 38%; border-radius:10px;}
+.main .size_button p.two{bottom: 60px; left: 33%; font-size: 3em;}
+/* 遮挡 */
+    .rules{width: 440px; height: 494px; left:32%;}
+}
+
+/* 1330px */
+@media(min-width:1330px){
+.main .size_button button{bottom:150px; left: 40%;}
+/* 遮挡 */
+    .rules{left:34%;}
+}
+
+/* 1366px */
+@media(min-width:1366px){
+.main .size_button button{bottom:200px; left: 36%; padding:30px 100px;}
+.main .size_button p.two{bottom: 60px; left: 35%; font-size: 3em;}
+
+}
+
+/* 1370px */
+@media(min-width:1370px){
+.main .size_button p.two{bottom: 60px; left: 34%; font-size: 3.2em;}
+}
+
+/* 1450px */
+@media(min-width:1450px){
+.main .size_button p.two{bottom: 60px; left: 34%; font-size: 3.4em;}
+}
+
+/* 1500px */
+@media(min-width:1500px){
+.main .size_button p.two{bottom: 60px; left: 35%; font-size: 3.4em;}
+}

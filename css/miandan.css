@@ -1,0 +1,25 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.8.3
+    最新更新:2017.8.3
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间: 
+*/
+body{background: #F2F2F2;};
+/************************************* 头部 *************************************/
+header{width: 100%; height: 52px; position:fixed; top:0; left: 0; z-index: 9;}
+header .new{width: 100%; height: 50px; line-height: 50px; border-bottom:1px solid #D6D6D6; background: #F8F8F8; text-align: center; font-size: 1.6em;}
+header .new p{ width: 98%; height: 50px; margin-left: 1%;}
+header .new p span.fl{ padding-top:10px; font-size: 1.4em;}
+/************************************* 头部 结束 *************************************/
+
+/* 内容 */
+.main{width: 100%; height: auto;background: #F2F2F2;}
+.main .picture {width: 100%; text-align: center;}
+.main .picture img{width: 40%; margin-top: 70px;}
+.main .picture p{ color: #9C9C9C; margin-top: 10px;}
+.main .picture p.big{font-size: 1.2em; color: #161817;}
+
+

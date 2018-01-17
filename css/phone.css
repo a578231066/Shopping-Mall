@@ -1,0 +1,37 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.7.29
+    最新更新:2017.7.31
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间: 
+*/
+/* 手机登录 */
+.telePhone{width: 100%; background: #F2F2F2; position:fixed; top: 0; left: 0; z-index: 1002;}
+.telePhone .telePhone_top{width: 100%; height: 50px; line-height: 50px; text-align: center; background: #F8F8F8; font-size: 1.4em; padding-right: 9%; border-bottom:1px solid #E9E9E9;}
+.telePhone .telePhone_top strong{ display: inline-block; width: 30px;}
+
+.telePhone .telePhone_down{width: 100%; height: 105px; border-top:1px solid #DCDCDC; border-bottom:1px solid #DCDCDC; background: #fff; margin-top: 10px;}
+.telePhone .telePhone_down .tel{width: 90%; margin:0 auto;}
+.telePhone .telePhone_down .tel div{ height: 50px; line-height: 50px;}
+.telePhone .telePhone_down span{display: inline-block; width: 25%; color: #333;}
+.telePhone .telePhone_down .tel input{height: 30px; border:none;} 
+.telePhone .telePhone_down .tel button{height: 30px; line-height: 0; margin-left: 5px; text-align: center; background: none; border:none; pointer-events:none; color:#bbb;}
+.telePhone .telePhone_down .tel .phone{border-bottom:1px solid #D3D3D3;}
+.telePhone .telePhone_down .tel .phone input{width: 75%; height: 30px;}
+.telePhone .telePhone_down .tel .cod input{ width: 35%;}
+.telePhone .telePhone_down .tel .cod #checkCode{ height: 30px; text-align: center;/*  background: url(../images/yzm.jpg) */; letter-spacing: 10px; color: #8B8B8B; font-size: 1.4em; font-style: italic;}
+.telePhone .telePhone_down .code {width: 100%; height: 50px; margin:0 auto; line-height: 50px; background: #fff;}
+.telePhone .telePhone_down .code input{ width: 65%; height: 40px; border:none;}
+.telePhone .telePhone_down .code button{width: 35%; background: none; border:none; color: #bbb;}
+
+div.zhuce{ width: 96%; height: 30px; line-height: 30px; margin: 0 auto;}
+div.zhuce a{color: #1593FA;}
+
+.telePhone .telePhone_down .sign{width: 90%; margin:0 auto; margin-bottom: 10px;}
+.telePhone .telePhone_down .sign button{width: 100%;}
+.telePhone .telePhone_down .sign div{ margin-top: 10px;}
+.telePhone .telePhone_down .sign div a{color: #E2352C; text-decoration: underline;}
+
+.shouji{width: 80%; height: 30px; line-height: 35px; background: rgba(0,0,0,.5); position:fixed; bottom:100px; left:10%; color: #fff; text-align: center; border-radius: 5px; font-size: 1.2em; display: none; z-index: 99999;}

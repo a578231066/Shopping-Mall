@@ -1,0 +1,325 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.8.1
+    最新更新:2017.8.1
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间: 
+*/
+body{background: #F8F8F8;}
+
+/************************************* 搜索头部 *************************************/
+header{width: 100%; height: 90px; position:fixed; top:0; left: 0; z-index: 9;}
+header .new{width: 100%; height: 50px; line-height: 50px; border-bottom:1px solid #D6D6D6; background: #F8F8F8; text-align: center; font-size: 2em;}
+header .new p{ width: 100%; height: 50px;}
+/************************************* 搜索头部 结束 *************************************/
+
+
+
+/* 整体内容  双排 */
+#main_two{width: 100%; height: 500px;margin-top: 5px; overflow-y: auto;}
+
+#main_two .top_tongcheng{ height: 130px; background: #fff; text-align: center; border-bottom:1px solid #EAE6EA; margin-top: 46px; padding-top: 20px;}
+#main_two .top_tongcheng .one_tongcheng{ border-right:1px solid #E3E3E3;}
+#main_two .top_tongcheng dd{width: 50%; float: left;}
+#main_two .top_tongcheng dd p {color: #999; font-size: 1.2em;}
+#main_two .top_tongcheng dd p img{width: 30px; height: 30px; margin-top: 5px; margin-left: 5px;}
+#main_two .top_tongcheng .one_tongcheng p img{ border-radius:20px;margin-right: -8px;}
+#main_two .top_tongcheng dd p.one{ color: #666;}
+#main_two .top_tongcheng dd p.one img{width: 20px; height: 20px; margin-right: 5px; border:none;}
+
+#main_two .imgTopNew{width: 100%; height: 50px; line-height: 50px; font-size: 1.2em; margin-top: 10px; text-align: center; color: #E23225; background: #fff;}
+#main_two .imgTopNew img{width: 25px; height: 25px; margin-right:5px;}
+
+#main_two .left{ width: 49.5%; height: 235px; background: #fff; margin-bottom: 5px;}
+#main_two .left img{ width: 100%;}
+#main_two .left p.top{ height: 45px; margin-top: 5px; color: #101410; padding: 0 2%; font-size: 0.9em; overflow: hidden; white-space: nowrap; text-overflow:ellipsis;}
+#main_two .left p.down{ height: 30px; line-height: 30px; margin-top: -20px; padding:0 4%; color: #E72D22; font-size: 1.2em;}
+#main_two .left p.down span{ font-size: 0.2em; color: #A2A4A2;}
+
+
+/* footer */
+footer{width: 100%; height: 60px; border-top:1px solid #F4F2F4; background: #fff; position: fixed; bottom: 0; z-index: 10;}
+footer ul li{ float: left; width: 20%; text-align: center; font-size: 1em; padding-top: 10px;}
+footer ul li span{ font-size: 2em;}
+footer ul li a{ color: #636563;}
+footer ul li.home a{ color: #E72C21;}
+
+
+/* 手机分辨率兼容 */
+/* S5 */
+@media(min-width:360px){
+/* 双排 */
+    #main_two .left{ height: 250px;}
+}
+
+/* iPhone6 */
+@media(min-width:375px){
+/* 双排 */
+    #main_two .left{ height: 260px;}
+
+}
+
+/* iPhone6 Plus */
+@media(min-width:414px){
+/* 双排 */
+    #main_two .left{ height: 280px;}
+}
+
+/* 455px */
+@media(min-width:455px){
+#main_two .top_tongcheng{ height: 150px; padding-top: 30px;}
+#main_two .top_tongcheng dd{height: 100px;}
+#main_two .top_tongcheng dd p {font-size: 1.3em;}
+#main_two .top_tongcheng dd p img{width: 35px; height: 35px;}
+#main_two .top_tongcheng dd p.one img{width: 22px; height: 22px;}
+
+/* 双排 */
+    #main_two .left{ height: 290px;}
+}
+
+/* 470px */
+@media(min-width:470px){
+
+/* 双排 */
+    #main_two .left{ height: 320px;}
+    #main_two .left p.top{ height: 40px; font-size: 1.1em;}
+    #main_two .left p.down{ height: 40px; line-height: 40px; margin-top: -8px; font-size: 1.8em;}
+    #main_two .left p.down span{ font-size: 0.6em;}
+}
+
+/* 500px */
+@media(min-width:500px){
+/* 双排 */
+    #main_two .left{ height: 340px;}
+    #main_two .left p.top{ font-size: 1.3em;}
+    #main_two .left p.down{ font-size: 2em;}
+    #main_two .left p.down span{ font-size: 0.6em;}
+}
+
+/* 530px */
+@media(min-width:530px){
+/* 双排 */
+    #main_two .left{ height: 350px;}
+    #main_two .left p.top{ font-size: 1.3em;}
+    #main_two .left p.down{ font-size: 2em;}
+    #main_two .left p.down span{ font-size: 0.6em;}
+}
+
+/* 556px */
+@media(min-width:556px){
+/* 双排 */
+    #main_two .left{ height: 360px;}
+}
+
+/* iphone5横屏 */
+@media(min-width:568px){
+/* 双排 */
+    #main_two .left{ height: 360px;}
+    #main_two .left p.top{ height: 40px; margin-top: 0;}
+    #main_two .left p.down{ height: 40px; line-height: 40px; font-size: 1.6em;}
+    #main_two .left p.down span{font-size: 0.8em;}
+}
+
+/* 600px */
+@media(min-width:600px){
+/* 双排 */
+    #main_two .left{ height: 400px;}
+    #main_two .left p.down{ font-size: 1.8em;}
+    #main_two .left p.down span{font-size: 0.8em;}
+}
+
+/* S5横屏 */
+@media(min-width:640px){
+/* 双排 */
+    #main_two .left{ height: 400px;}
+    #main_two .left p.top{ height: 30px; margin-top: 0; font-size: 1.2em;}
+    #main_two .left p.down{ height: 50px; line-height: 50px; padding:0 4%; font-size: 1.8em;}
+    #main_two .left p.down span{ font-size: 0.8em;}
+}
+
+/* iPhone6横屏 */
+@media(min-width:667px){
+/* 双排 */
+    #main_two .left{ height: 420px;}
+    #main_two .left p.top{ font-size: 1.2em;}
+    #main_two .left p.down{ font-size: 1.8em;}
+    #main_two .left p.down span{ font-size: 0.8em;}
+}
+
+/* 690px */
+@media(min-width:690px){
+/* 双排 */
+    #main_two .left{ height: 420px;}
+    #main_two .left p.top{ font-size: 1.3em;}
+    #main_two .left p.down{ font-size: 1.8em;}
+    #main_two .left p.down span{ font-size: 0.8em;}
+}
+
+/* 710px */
+@media(min-width:710px){
+/* 双排 */
+    #main_two .left{ height: 430px;}
+}
+
+/* 715px */
+@media(min-width:715px){
+/* 双排 */
+    #main_two .left{ height: 440px;}
+    #main_two .left p.top{ font-size: 1.3em;}
+    #main_two .left p.down{ font-size: 1.8em;}
+    #main_two .left p.down span{ font-size: 0.8em;}
+}
+
+/* Nexus6P横屏 */
+@media(min-width:736px){
+/* 双排 */
+    #main_two .left{ height: 450px;}
+    #main_two .left p.top{ font-size: 1.1em;}
+}
+
+/* iPad */
+@media(min-width:768px){
+
+/* 双排 */
+    #main_two .left{ height: 460px;}
+}
+
+/* 800px */
+@media(min-width:800px){
+/* 双排 */
+    #main_two .left{ height: 480px;}
+    #main_two .left p.top{font-size: 1.2em;}
+    #main_two .left p.down{ font-size: 1.6em;}
+    #main_two .left p.down span{ font-size: 0.8em;}
+
+}
+
+/* 830px */
+@media(min-width:830px){
+
+/* 双排 */
+    #main_two .left{ height: 500px;}
+    #main_two .left p.top{ font-size: 1.3em;}
+}
+
+/* 870px */
+@media(min-width:870px){
+/* 双排 */
+    #main_two .left{ height: 520px;}
+    #main_two .left p.top{ font-size: 1.3em;}
+}
+
+/* 910px */
+@media(min-width:910px){
+/* 双排 */
+    #main_two .left{ height: 540px;}
+    #main_two .left p.top{ font-size: 1.4em;}
+    #main_two .left p.down{ font-size: 1.8em;}
+}
+
+/* 950px */
+@media(min-width:950px){
+#main_two .top_tongcheng{ height: 180px; padding-top: 35px;}
+#main_two .top_tongcheng dd{height: 120px;}
+#main_two .top_tongcheng dd p {font-size: 1.5em;}
+#main_two .top_tongcheng dd p img{width: 40px; height: 40px;}
+#main_two .top_tongcheng dd p.one img{width: 26px; height: 26px;}
+
+/* 双排 */
+    #main_two .left{ height: 560px;}
+}
+
+/* 995px */
+@media(min-width:995px){
+/* 双排 */
+    #main_two .left{ height: 580px;}
+}
+
+/* iPad横屏 */
+@media(min-width:1024px){
+/* 双排 */
+    #main_two .left{ height: 600px;}
+    #main_two .left p.top{ height: 40px; font-size: 1.45em;}
+    #main_two .left p.down{ height: 30px; line-height: 30px;font-size: 2em;}
+    #main_two .left p.down span{ font-size: 0.8em;}
+}
+
+/* 1080px */
+@media(min-width:1080px){
+/* 双排 */
+    #main_two .left{ height: 630px;}
+}
+
+/* 1120px */
+@media(min-width:1120px){
+/* 双排 */
+    #main_two .left{ height: 650px;}
+}
+
+/* 1160px */
+@media(min-width:1160px){
+/* 双排 */
+    #main_two .left{ height: 670px;}
+}
+
+/* 1200px */
+@media(min-width:1200px){
+/* 双排 */
+    #main_two .left{ height: 680px;}
+}
+
+/* 1240px */
+@media(min-width:1240px){
+/* 双排 */
+    #main_two .left{ height: 710px;}
+}
+
+/* 1290px */
+@media(min-width:1290px){
+/* 双排 */
+    #main_two .left{ height: 730px;}
+}
+
+/* 1330px */
+@media(min-width:1330px){
+/* 双排 */
+    #main_two .left{ height: 750px;}
+}
+
+/* 1370px */
+@media(min-width:1370px){
+/* 双排 */
+    #main_two .left{ height: 770px;}
+}
+
+/* 1410px */
+@media(min-width:1410px){
+/* 双排 */
+    #main_two .left{ height: 790px;}
+}
+
+/* 1450px */
+@media(min-width:1450px){
+/* 双排 */
+    #main_two .left{ height: 810px;}
+}
+
+/* 1500px */
+@media(min-width:1500px){
+/* 双排 */
+    #main_two .left{ height: 830px;}
+}
+
+/* 1540px */
+@media(min-width:1540px){
+/* 双排 */
+    #main_two .left{ height: 850px;}
+}
+
+/* 1580px */
+@media(min-width:1580px){
+/* 双排 */
+    #main_two .left{ height: 870px;}
+}

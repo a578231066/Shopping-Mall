@@ -1,0 +1,250 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.7.29
+    最新更新:2017.7.31
+    修改人员:赵强
+    修改日期:2017.7.31
+    修改原因:
+    修改代码行数区间: 
+*/
+/************************************* 搜索头部 *************************************/
+header{width: 100%; height: 90px; position:fixed; top:0; left: 0; z-index: 9;}
+header .search{width: 100%; height: 50px; line-height: 50px; border-bottom:1px solid #D6D6D6; background: #F8F8F8; text-align: center; font-size: 2em;}
+header .search p{ width: 100%; height: 50px;}
+/************************************* 搜索头部 结束 *************************************/
+
+/************************************* 搜索input *************************************/
+header .inp{height: 40px; background: #F2F2F2; padding-top: 4px; border-bottom:1px solid #E4E4E4;}
+header .inp div{width: 90%; height: 30px; letter-spacing: 2px; line-height: 30px; font-size: 1.2em; border-radius:5px; background: #fff; text-align: center; color: #9B9B9B; margin: 0 auto;}
+/************************************* 搜索input 结束 *************************************/
+
+/************************************* 左侧导航 *************************************/
+.menu{width: 30%; float: left; position:fixed; top: 90px; left: 0; overflow: auto; background: #F3F3F3;}
+.menu ul li a{width: 100%; height: 50px; line-height: 50px; text-align: center; background: #F3F3F3; color: #626262; display: block}
+.menu ul li a:hover,.menu ul li a.cur{background-color: #fff;color: #E8362B;}
+/************************************* 左侧导航 结束 *************************************/
+
+/************************************* 右侧内容 *************************************/
+.content{width: 70%; margin-top: 90px; float: right;}
+.content div{width: 100%;}
+.content .item .top{ height: 50px; line-height: 50px; color: #353535; font-size: 1.3em; padding: 0 4%; }
+.content .item .top span{ display: inline-block; float: right; font-size: 0.8em; }
+.content .item .top span a{color: #9B9B9B;}
+/* 全部 */
+.content .item .down{height: 300px;}
+
+/* 女装 */
+.content .item .down_four{height: 400px;}
+
+/* 最后一个 */
+.content .item .down_footer{height: 370px;}
+
+.content .item .down li{width: 27%; margin-left: 5%; text-align: center; color: #6A6A6A; font-size: 1em; float: left;}
+.content .item .down li p{margin-top: 5px; padding-bottom: 5px;}
+.content .item .down li img{width: 60px; height: 70px;}
+/************************************* 右侧内容 结束 *************************************/
+
+
+
+
+/************************************* footer **************************************/
+footer{width: 100%; height: 60px; border-top:1px solid #F4F2F4; background: #fff; position: fixed; bottom: 0; z-index: 100;}
+footer ul li{ float: left; width: 20%; text-align: center; font-size: 1em; padding-top: 10px;}
+footer ul li span{ font-size: 2em;}
+footer ul li a{ color: #636563;}
+footer ul li.home a{ color: #E72C21;}
+/************************************* footer end **************************************/
+
+/************************************* 遮挡 *************************************/
+.sousuo{width: 100%; background: #fff; position: fixed; top:0; left: 0; z-index: 999; display: none; overflow: hidden;}
+.sousuo .top_tou{width: 100%; height: 50px; line-height: 50px; border-bottom:1px solid #DCDCDC; background: #F8F8F8;}
+.sousuo .top_tou div a.one{ display: block; width: 10%; color: #666; font-size: 1.4em;}
+.sousuo .top_tou>div>div{width: 78%;}
+.sousuo .top_tou>div>div>span{width: 10%; height: 30px; line-height: 30px; color: #9C9C9C; text-align: center; display: inline-block; background: #fff; border-radius: 4px 0 0 4px;}
+.sousuo .top_tou>div>div>input{width: 88%; height: 30px; line-height: 30px; border:none; border-radius: 0 4px 4px 0;}
+.sousuo .top_tou a{font-size: 1.1em;width: 10%; display: block; color: #0D1110; text-align: center; cursor:pointer;}
+
+.sousuo .down_di .remen{height: 40px; line-height: 50px; font-size: 1.2em; padding-left: 5%;}
+.sousuo .down_di .button{padding-left: 5%;}
+.sousuo .down_di .button button{ background:none; border:1px solid #D2D2D2; margin-top: 10px; margin-right:2%;  border-radius:5px; padding:2px 4%;}
+.sousuo .down_di .button button a{color: #101211;}
+/************************************* 遮挡 结束 *************************************/
+
+/* 手机分辨率兼容 */
+/* S5 */
+@media(min-width:360px){
+/* 左侧导航 */
+.menu{height: 490px;}
+.menu ul li a{width: 100%; height: 60px; line-height: 60px; font-size: 1.2em;}
+
+/* 右侧内容 */
+/* 全部 */
+.content .item .down{height: 340px;}
+
+/* 女装 */
+.content .item .down_four{height: 450px;}
+.content .item .down li img{width: 70px; height: 80px;}
+
+/* 最后一个 */
+.content .item .down_footer{height: 420px;}
+.content .item .down li p{ font-size: 1.1em; margin-top: 5px; padding-bottom: 5px;}
+}
+
+/* iPhone6 */
+@media(min-width:375px){
+/* 左侧导航 */
+.menu{height: 530px;}
+/* 右侧内容 */
+/* 全部 */
+.content .item .down{height: 350px;}
+
+/* 女装 */
+.content .item .down_four{height: 470px;}
+.content .item .down li img{width: 75px; height: 85px;}
+
+/* 最后一个 */
+.content .item .down_footer{height: 420px;}
+
+.content .item .down li p{ font-size: 1.2em; margin-top: 5px; padding-bottom: 5px;}
+}
+
+/* iPhone6 Plus */
+@media(min-width:414px){
+/* 左侧导航 */
+.menu{height: 590px;}
+.menu ul li a{width: 100%; height: 70px; line-height: 70px; font-size: 1.2em;}
+/* 右侧内容 */
+/* 全部 */
+.content .item .down{height: 360px;}
+
+/* 女装 */
+.content .item .down_four{height: 490px;}
+.content .item .down li img{width: 80px; height: 90px;}
+
+/* 最后一个 */
+.content .item .down_footer{height: 430px;}
+.content .item .down li p{ font-size: 1.3em; margin-top: 5px; padding-bottom: 5px;}
+
+}
+
+/* 530px */
+@media(min-width:530px){
+/* 右侧内容 */
+.content .item .down li{font-size: 1.1em;}
+}
+
+/* iphone5横屏 */
+@media(min-width:568px){
+/* 左侧导航 */
+.menu{height: 170px;}
+.menu ul li a{width: 100%; height: 40px; line-height: 40px; font-size: 1em;}
+/* 右侧内容 */
+/* 全部 */
+.content .item .down{height: 280px;}
+
+/* 女装 */
+.content .item .down_four{height: 370px;}
+.content .item .down li img{width: 50px; height: 60px;}
+
+/* 最后一个 */
+.content .item .down_footer{height: 360px;}
+.content .item .down li p{ font-size: 1.1em; margin-top: 5px; padding-bottom: 5px;}
+}
+
+/* 600px */
+@media(min-width:600px){
+.content .item .top span{font-size: 0.9em; }
+}
+
+/* S5横屏 */
+@media(min-width:640px){
+/* 左侧导航 */
+.menu{height: 210px;}
+.menu ul li a{width: 100%; height: 40px; line-height: 40px; font-size: 1.2em; letter-spacing: 2px;}
+/* 右侧内容 */
+/* 全部 */
+.content .item .down{height: 340px;}
+
+/* 女装 */
+.content .item .down_four{height: 450px;}
+.content .item .down li img{width: 70px; height: 80px;}
+
+/* 最后一个 */
+.content .item .down_footer{height: 400px;}
+.content .item .down li p{ font-size: 1.1em; margin-top: 5px; padding-bottom: 5px;}
+}
+
+/* iPhone6横屏 */
+@media(min-width:667px){
+/* 左侧导航 */
+.menu{height: 230px;}
+.menu ul li a{width: 100%; height: 50px; line-height: 50px; font-size: 1.2em;}
+
+}
+
+/* Nexus6P横屏 */
+@media(min-width:732px){
+/* 左侧导航 */
+.menu{height: 260px;}
+.menu ul li a{width: 100%; height: 40px; line-height: 40px; font-size: 1em;}
+/* 右侧内容 */
+/* 全部 */
+.content .item .down{height: 370px;}
+
+/* 女装 */
+.content .item .down_four{height: 490px;}
+.content .item .down li img{width: 80px; height: 90px;}
+
+/* 最后一个 */
+.content .item .down_footer{height: 440px;}
+.content .item .down li p{ font-size: 1.1em; margin-top: 5px; padding-bottom: 5px;}
+}
+
+/* iPad */
+@media(min-width:768px){
+
+/* 左侧导航 */
+.menu{height: 880px;}
+.menu ul li a{width: 100%; height: 70px; line-height: 70px; font-size: 1.4em;}
+/* 右侧内容 */
+.content .item .top{ font-size: 1.8em;}
+/* 全部 */
+.content .item .down{height: 440px; font-size: 1.4em;}
+
+/* 女装 */
+.content .item .down_four{height: 570px;}
+.content .item .down li img{width: 100px; height: 110px;}
+
+/* 最后一个 */
+.content .item .down_footer{height: 520px;}
+.content .item .down li p{ font-size: 1.1em; margin-top: 5px; padding-bottom: 5px;}
+}
+
+/* 800px */
+@media(min-width:800px){
+.menu ul li a{ font-size: 1.4em;}
+
+}
+
+/* iPad横屏 */
+@media(min-width:1024px){
+.menu{height: 620px;}
+.menu ul li a{width: 100%; height: 70px; line-height: 70px; font-size: 1.6em;}
+/* 右侧内容 */
+.content .item .top{ height: 70px; line-height: 70px; font-size: 2em;}
+
+/* 全部 */
+.content .item .down{height: 470px; font-size: 1.4em;}
+
+/* 女装 */
+.content .item .down_four{height: 620px;}
+.content .item .down li img{width: 110px; height: 120px;}
+
+/* 最后一个 */
+.content .item .down_footer{height: 540px;}
+.content .item .down li p{ font-size: 1.1em; margin-top: 5px; padding-bottom: 5px;}
+}
+
+
+
+

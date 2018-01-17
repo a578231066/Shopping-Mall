@@ -1,0 +1,147 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.8.4
+    最新更新:2017.8.4
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间: 
+*/
+body{background: #F2F2F2;};
+/************************************* 头部 *************************************/
+header{width: 100%; height: 52px; position:fixed; top:0; left: 0; z-index: 9;}
+header .new{width: 100%; height: 50px; line-height: 50px; border-bottom:1px solid #D6D6D6; background: #F8F8F8; text-align: center; font-size: 1.6em;}
+header .new p{ width: 98%; height: 50px; margin-left: 1%;}
+header .new p span.fl{ padding-top:10px; font-size: 1.4em;}
+/************************************* 头部 结束 *************************************/
+
+/* 内容 */
+.main{width: 100%; height: auto;}
+.main .main_top{width: 100%; height: 100px; line-height: 100px; text-align: center; background: #fff;}
+.main .main_top img{width: 26%; height: 80%;}
+.main .main_down{width: 100%; height: 70px; text-align: center;}
+.main .main_down button{width: 90%; height: 30px; margin:0 auto; margin-top: 20px; background: #DF2E24; color: #fff; border:none; border-radius:5px; font-size: 1.2em; letter-spacing: 1px;}
+.main .main_down button span{display: inline-block; width: 20px; height: 20px; background: #fff; color: #DF2E24;line-height: 20px; text-align: center; margin-right: 5px; border-radius:2px; padding-left: 2px;}
+
+/* 弹出层 */
+.zhedang{width: 100%; background: rgba(0,0,0,.5); position:fixed; top: 0; left: 0; display: none;}
+.dizhi{width: 80%; height: 210px; background: #fff; position:fixed; top: 100px; left: 10%; border-radius: 5px; display: none;}
+.dizhi .dizhi_top{width: 100%; height: 35px; line-height: 35px; font-size: 1.1em; text-align:center;}
+.dizhi .dizhi_top span{display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align:center; background: #999; color: #fff; border-radius: 15px; font-size: 0.5em; margin:-15px -10px 0 0;}
+.dizhi .dizhi_down{width: 100%; height: 165px;}
+.dizhi .dizhi_down input{width: 100%; height: 40px; border:none; border-top:1px solid #F7F7F7; border-bottom:1px solid #F7F7F7; padding-left: 4%;}
+.dizhi .dizhi_down p{width: 100%; border-top:1px solid #F7F7F7; border-bottom:1px solid #F7F7F7;}
+.dizhi .dizhi_down p input{width: 50%; height: 40px; border:none; border-right:1px solid #F7F7F7; padding-left:4%;}
+/* 选择城市CSS */
+    /* .fixWidth{ width: 100%;} */
+    .contain .demo div input{ width: 100%; height: 40px; font-size: 1em; line-height: 40px; padding-left: 4%;}
+    #trigger span{ padding: 12px 4% 0 0;}
+/* 选择城市CSS 结束 */
+.dizhi .dizhi_down button{width: 90%; height: 35px; background: #DF2E24; color: #fff; margin-left:5%; border:none; border-radius: 5px; margin-top: 10px; font-size: 1.2em; letter-spacing: 2px;}
+.shouji{width: 80%; height: 30px; line-height: 30px; background: rgba(0,0,0,.5); position:fixed; bottom:100px; left:10%; color: #fff; text-align: center; border-radius: 5px; font-size: 1.2em; display: none; z-index: 999;}
+
+
+/* 手机分辨率兼容 */
+/* S5 */
+@media(min-width:360px){
+.main .main_top{height: 120px; line-height: 120px;}
+.main .main_top img{width: 26%; height: 80%;}
+}
+
+/* iPhone6 */
+@media(min-width:375px){
+.main .main_top{height: 110px; line-height: 110px;}
+.main .main_top img{width: 26%; height: 80%;}
+}
+
+/* iPhone6 Plus */
+@media(min-width:414px){
+.main .main_top{height: 130px; line-height: 130px;}
+.main .main_top img{width: 26%; height: 80%;}
+}
+
+/* 455px */
+@media(min-width:455px){
+.dizhi{width: 80%;height: 245px; left:10%;}
+.dizhi .dizhi_top{height: 40px; line-height: 40px; font-size: 1.2em;}
+.dizhi .dizhi_down{width: 100%; height: 220px;}
+.dizhi .dizhi_down input{height: 50px;}
+
+.dizhi .dizhi_down p input{padding-left:4%;}
+.dizhi .dizhi_down button{margin-top: 15px;}
+}
+
+/* 556px */
+@media(min-width:556px){
+.main .main_top{height: 150px; line-height: 150px;}
+.main .main_top img{width: 26%; height: 80%;}
+}
+
+/* iphone5横屏 */
+@media(min-width:568px){
+.main .main_top{height: 160px; line-height: 160px;}
+.main .main_top img{width: 26%; height: 80%;}
+
+.dizhi{width: 60%;height: 245px; top:50px; left:20%;}
+.dizhi .dizhi_top{height: 40px; line-height: 40px; font-size: 1.2em;}
+.dizhi .dizhi_down{width: 100%; height: 220px;}
+.dizhi .dizhi_down input{height: 50px;}
+
+.dizhi .dizhi_down p input{padding-left:4%;}
+.dizhi .dizhi_down button{margin-top: 15px;}
+}
+
+/* S5横屏 */
+@media(min-width:640px){
+.main .main_top{height: 170px; line-height: 170px;}
+.main .main_top img{width: 26%; height: 80%;}
+}
+
+/* iPhone6横屏 */
+@media(min-width:667px){
+.main .main_top{height: 180px; line-height: 180px;}
+.main .main_top img{width: 26%; height: 80%;}
+}
+
+/* Nexus6P横屏 */
+@media(min-width:732px){
+.main .main_top{height: 200px; line-height: 200px;}
+.main .main_top img{width: 26%; height: 80%;}
+
+}
+
+/* iPad */
+@media(min-width:768px){
+.main .main_top{height: 210px; line-height: 210px;}
+.main .main_top img{width: 26%; height: 80%;}
+
+.dizhi{width: 60%;height: 245px; top: 200px; left:20%;}
+.dizhi .dizhi_top{height: 40px; line-height: 40px; font-size: 1.2em;}
+.dizhi .dizhi_down{width: 100%; height: 220px;}
+.dizhi .dizhi_down input{height: 50px;}
+
+.dizhi .dizhi_down p input{padding-left:4%;}
+.dizhi .dizhi_down button{margin-top: 15px;}
+.shouji{width: 80%; height: 30px; line-height: 30px; background: rgba(0,0,0,.5); position:fixed; bottom:100px; left:10%; color: #fff; text-align: center; border-radius: 5px; font-size: 1.2em; display: none;}
+
+
+}
+
+/* iPad横屏 */
+@media(min-width:1024px){
+.main .main_top{height: 260px; line-height: 260px;}
+.main .main_top img{width: 26%; height: 80%;}
+
+.dizhi{width: 60%;height: 300px; top: 150px; left:20%;}
+.dizhi .dizhi_top{height: 50px; line-height: 50px; font-size: 1.2em;}
+.dizhi .dizhi_down{width: 100%; height: 250px;}
+.dizhi .dizhi_down input{height: 60px;}
+.dizhi .dizhi_down p input{height: 50px; padding-left:4%;}
+.dizhi .dizhi_down button{margin-top: 20px;}
+}
+
+/* 1366px */
+@media(min-width:1366px){
+.main .main_top{height: 300px; line-height: 300px;}
+.main .main_top img{width: 26%; height: 80%;}
+}

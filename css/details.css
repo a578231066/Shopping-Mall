@@ -1,0 +1,311 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.8.1
+    最新更新:2017.8.1
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间: 
+*/
+/* 返回顶部 */
+#go{ position: fixed; right: 2%; bottom: 100px; display: none; z-index: 1000; font-size: 1.5em;}
+#go a{ display: block; width: 40px; height: 40px; border-radius:20px; border:1px solid #ECECEC; background: #fff; text-align: center; line-height: 40px; color: #7F7F82;}
+
+/* 头部 */
+header{width: 100%; height: 50px; padding:10px 0 0 2%; position: fixed; top: 0; left: 0; z-index: 1000;}
+header div{ width: 30px; height: 30px; line-height: 32px; background: rgba(0,0,0,.5); text-align: center; border-radius: 25px; color: #fff; font-size: 1.2em;}
+header .ding{background: none; color: #838383; font-size: 1.8em; text-align: left;}
+
+/* banner */
+#banner{ width: 100%; height: 150px;}
+#banner img{width: 100%;}
+#banner .swiper-container { width: 100%; height: 100%; margin-left: auto; margin-right: auto;}
+#banner .swiper-slide { text-align: center; font-size: 18px; background: #fff;}
+#banner .one{text-align: right;}
+#banner .swiper-pagination-bullet{width:6px;height:6px;display:inline-block;border-radius:100%;background:#fff; opacity: 1;margin-left: 0;}
+#banner .swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{bottom:2px;left:0;width:100%}
+#banner .swiper-pagination-bullet-active{opacity:1;background:#f00;}
+
+/* 内容部分 */
+.main{width: 100%; height: auto;}
+.main .one{height: 40px; line-height: 40px; padding:0 2%;}
+.main .one .zero{ font-size: 1.4em; color: #E72C21; font-family: "微软雅黑"; margin-right: 5px;}
+.main .one s{ color:#605E60;}
+.main .one .fr{color: #5D5C5D;}
+
+/* 内容标题 */
+.main .tit{height: 50px; padding:0 2%;}
+
+/* 详细信息 */
+.main .all_main .size{ height: auto; color: #686768;}
+.main .all_main .size p{ padding:0 2%;}
+.main .all_main .mianfei{margin-top:10px;}
+.main .all_main .all_mainA{ height: 50px; margin-top: 10px; border-top:1px solid #F7F3F7; padding:10px 2% 0 2%;}
+.main .all_main .all_mainA a{ color: #5A595A;}
+.main .all_main .all_mainA span.fr{ font-size: 1.3em;}
+.main .all_main .all_mainA img{width: 15px; height: 15px; margin:0 5px;}
+.main .all_main .all_mainDown{height: 100px; padding-top: 15px; background: #F7F3F7;}
+.main .all_main .all_mainDown div{height: 70px; background: #fff; padding:0 2%;}
+.main .all_main .all_mainDown div img{width: 50px; height: 50px; margin-right: 2%; margin-top: -23px;}
+.main .all_main .all_mainDown div span{ display: inline-block; width: 55%; margin-top: 18px; color: #151516; font-size: 1.1em;}
+.main .all_main .all_mainDown div span p{color: #9C9E9C; font-size: 0.5em;}
+.main .all_main .all_mainDown div button{ margin-top: 25px; padding:5px 8px; background: none; color:#5A595A; border:1px solid #9C9E9C; border-radius: 5px;}
+
+/* 商品详情 */
+.main .all_main .commodity{width: 100%; height: auto;}
+.main .all_main .commodity .commodity_titTop{height: 50px; padding:0 2%; line-height: 50px; font-size: 1.2em; border-bottom:1px solid #F9F6F9; color:#101410;}
+.main .all_main .commodity .picture div{ margin-top: 10px;}
+.main .all_main .commodity .picture div img{width: 100%;}
+
+
+
+/* 底部 */
+footer{width: 100%; position:fixed; bottom:0; left: 0; background: #fff;}
+footer ul.one{width: 40%; height: 60px; font-size: 1em;}
+footer li{ width: 32%; height: 60px; padding-top: 10px; float: left; text-align: center;}
+footer .one li{ border-top:1px solid #F7F3F7; border-left:1px solid #F7F3F7;}
+footer li span{ font-size: 1.6em;}
+footer li.red span{color: #E83B31;}
+footer .two{width: 60%;}
+footer .two li{font-size: 1.2em; letter-spacing: 1px;}
+footer .two li a{ color: #fff;}
+footer .two li.two_qianRed{width: 40%; background: #F7AAA5;}
+footer .two li.two_red{width: 60%; background: #E72C21;}
+
+/* 手机分辨率兼容 */
+/* iPhone5 */
+@media(min-width:320px){
+
+}
+
+/* S5 */
+@media(min-width:360px){
+/* banner */
+    #banner{ width: 100%; height: 170px;}
+}
+
+/* iPhone6 */
+@media(min-width:375px){
+/* banner */
+    #banner{ width: 100%; height: 180px;}
+}
+
+/* iPhone6 Plus */
+@media(min-width:414px){
+
+}
+
+/* 455px */
+@media(min-width:455px){
+/* banner */
+    #banner{ width: 100%; height: 190px;}
+}
+
+/* 470px */
+@media(min-width:470px){
+/* banner */
+    #banner{ width: 100%; height: 200px;}
+}
+
+/* 500px */
+@media(min-width:500px){
+/* banner */
+    #banner{ width: 100%; height: 240px;}
+}
+
+/* 530px */
+@media(min-width:530px){
+/* banner */
+    #banner{ width: 100%; height: 240px;}
+
+}
+
+/* 556px */
+@media(min-width:556px){
+/* banner */
+    #banner{ width: 100%; height: 260px;}
+
+}
+
+/* iphone5横屏 */
+@media(min-width:568px){
+/* banner */
+    #banner{ width: 100%; height: 180px;}
+}
+
+/* 580 */
+@media(min-width:580px){
+/* banner */
+    #banner{ width: 100%; height: 200px;}
+}
+
+/* 600px */
+@media(min-width:600px){
+/* banner */
+    #banner{ width: 100%; height: 270px;}
+}
+
+/* S5横屏 */
+@media(min-width:640px){
+/* banner */
+    #banner{ width: 100%; height: 240px;}
+}
+
+/* iPhone6横屏 */
+@media(min-width:667px){
+
+}
+
+/* 690px */
+@media(min-width:690px){
+
+}
+
+/* 710px */
+@media(min-width:710px){
+
+}
+
+/* 715px */
+@media(min-width:715px){
+
+}
+
+/* Nexus6P横屏 */
+@media(min-width:736px){
+/* banner */
+    #banner{ width: 100%; height: 230px;}
+}
+
+/* iPad */
+@media(min-width:768px){
+/* banner */
+    #banner{ width: 100%; height: 200px;}
+}
+
+/* 800px */
+@media(min-width:800px){
+/* banner */
+    #banner{ width: 100%; height: 260px;}
+}
+
+/* 830px */
+@media(min-width:830px){
+/* banner */
+    #banner{ width: 100%; height: 260px;}
+}
+
+/* 870px */
+@media(min-width:870px){
+/* banner */
+    #banner{ width: 100%; height: 260px;}
+}
+
+/* 910px */
+@media(min-width:910px){
+/* banner */
+    #banner{ width: 100%; height: 280px;}
+}
+
+/* 950px */
+@media(min-width:950px){
+/* banner */
+    #banner{ width: 100%; height: 300px;}
+}
+
+/* 995px */
+@media(min-width:995px){
+/* banner */
+    #banner{ width: 100%; height: 320px;}
+}
+
+/* iPad横屏 */
+@media(min-width:1024px){
+/* banner */
+    #banner{ width: 100%; height: 300px;}
+}
+
+/* 1080px */
+@media(min-width:1080px){
+/* banner */
+    #banner{ width: 100%; height: 340px;}
+}
+
+/* 1120px */
+@media(min-width:1120px){
+/* banner */
+    #banner{ width: 100%; height: 340px;}
+}
+
+/* 1160px */
+@media(min-width:1160px){
+/* banner */
+    #banner{ width: 100%; height: 340px;}
+}
+
+/* 1200px */
+@media(min-width:1200px){
+/* banner */
+    #banner{ width: 100%; height: 350px;}
+}
+
+/* 1240px */
+@media(min-width:1240px){
+/* banner */
+    #banner{ width: 100%; height: 350px;}
+}
+
+/* 1290px */
+@media(min-width:1290px){
+/* banner */
+    #banner{ width: 100%; height: 350px;}
+}
+
+/* 1330px */
+@media(min-width:1330px){
+/* banner */
+    #banner{ width: 100%; height: 360px;}
+}
+
+/* 1370px */
+@media(min-width:1370px){
+/* banner */
+    #banner{ width: 100%; height: 380px;}
+}
+
+/* 1410px */
+@media(min-width:1410px){
+/* banner */
+    #banner{ width: 100%; height: 380px;}
+}
+
+/* 1450px */
+@media(min-width:1450px){
+/* banner */
+    #banner{ width: 100%; height: 400px;}
+}
+
+/* 1500px */
+@media(min-width:1500px){
+/* banner */
+    #banner{ width: 100%; height: 400px;}
+}
+
+/* 1540px */
+@media(min-width:1540px){
+/* banner */
+    #banner{ width: 100%; height: 400px;}
+}
+
+/* 1580px */
+@media(min-width:1580px){
+/* banner */
+    #banner{ width: 100%; height: 400px;}
+}
+
+
+
+
+
+
+

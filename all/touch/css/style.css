@@ -1,0 +1,32 @@
+﻿/*
+    项目负责人：赵强
+    项目创建日期:2017.7.20
+    最新更新:2017.7.20
+    修改人员:无
+    修改日期:无
+    修改原因:无
+    修改代码行数区间:无
+*/
+a:hover, a:active { outline:none; }
+select, input, textarea, button { font:99% sans-serif; }
+input, select { vertical-align:middle; }
+ul,ol,li{list-style:none;}
+img { border:0; max-width:100%; }
+hr{ display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+.nocallout {-webkit-touch-callout: none;} /* prevent callout */
+table { margin:0; padding:0; clear:left; width:100%; border-collapse:collapse; border-spacing:0; }
+table td { vertical-align:top; margin:0; }
+html{height:100%;}
+body {font:13px/1.4 sans-serif; *font-size: small;word-wrap:break-word;margin:0 auto;-webkit-text-size-adjust: none;color:#3c3c3c;font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif; height:100%;}
+a{color:#1191C3; text-decoration:none;}
+p{margin-bottom:1em;}
+
+/*导航 */
+.page{ text-align:left; height:38px; background: #fff; position: fixed; top: 50px; line-height:38px; width:100%;display:-webkit-box; z-index: 1000;}
+.page li{-webkit-box-flex:1; font-size:1.2em; display:block; color:#000; height:38px; line-height:38px; text-align:center; }
+.page li a{ color:#000; height:38px;}
+.page a.active{color:#f00; padding-bottom:5px; border-bottom:1px solid #c00;}
+
+
+
+

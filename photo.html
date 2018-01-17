@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/phone.css" type="text/css" />
+  </head>
+  <body>
+  <!-- 手机登录 -->
+  <div class="telePhone">
+    <div class="telePhone_top"><span class="fl"><a href="javascript:return_prepage()"><strong class="glyphicon glyphicon-menu-left"></strong></a></span>账号登录</div>
+    <div class="telePhone_down">
+      <div class="tel">
+        <div class="phone">
+          <span>账号</span><input type="text" id="uesrname" placeholder="请输入手机号码" />
+        </div>
+        <div class="code code1">
+          <span>密码</span><input type="password" id="pwd" placeholder="请输入密码" />
+        </div> 
+      </div>
+      <div class="zhuce">
+        <a href="pwdPhone.html" class="fl">手机快捷登录</a>
+        <a href="photo_two.html" class='fr'>注册账号 ?</a>
+      </div>
+      <div class="sign">
+        <button type="button" class="btn btn-danger">登录</button>
+        <div>
+          <label for="checkbox"><input type="checkbox" id="checkbox" checked="checked" /> &nbsp;我已经阅读并同意</label> <a href="服务协议.html">服务协议</a>
+        </div>
+      </div>
+      <div id="slide-wrapper">
+    </div>
+  </div>
+
+  <div class="shouji">手机</div>
+
+  <!-- <div class="yanzheng_zd"></div>
+  <div class="yanzheng">
+    <input type="text" placeholder="再此输入验证码" /><img src="images/bg1.jpg" />
+  </div> -->
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- <script src="js/photo.js"></script> -->
+
+  <script>
+
+/* 返回上一页 */
+  function return_prepage(){
+    if(window.document.referrer==""||window.document.referrer==window.location.href){
+        window.location.href="{dede:type}[field:typelink /]{/dede:type}";
+    }else{
+        window.location.href=window.document.referrer;
+    }
+  }
+
+  $(function(){
+    var h=$(window).height();
+
+/* 手机登录 */
+    $(".telePhone").height(h+"px");
+
+    t=setInterval(function(){
+      $(".telePhone_down .sign button").click(function(){
+        var chang=$(".telePhone_down .phone input").val().length;
+        var mima=$(".telePhone .telePhone_down .tel .code1 input").val().length;
+        if(chang==11){
+          var str=$(".telePhone_down .phone input").val();
+          var ret=/^(0|86|17951)?(13[0-9]|15[012356789]|17[678]|18[0-9]|14[57])[0-9]{8}$/;
+          if(ret.test(str)){
+            
+            if(mima==0){
+              $(".shouji").empty();
+              $(".shouji").append("<span>密码不能为空!</span>");
+              $(".shouji").show(10);
+              setTimeout(function(){
+                  $(".shouji").hide(400);
+              },1000);
+              return;
+            }
+          }else if(str==""){
+            $(".shouji").empty();
+            $(".shouji").append("<span>电话号不能为空!</span>");
+            $(".shouji").show(10);
+            setTimeout(function(){
+                $(".shouji").hide(400);
+            },1000);
+          }else{
+            $(".shouji").empty();
+            $(".shouji").append("<span>请输入正确的手机号!</span>");
+            $(".shouji").show(10);
+            setTimeout(function(){
+                $(".shouji").hide(400);
+            },1000);
+          }
+        }else if(chang<=10 && chang>=1 || chang>=12){
+          $(".shouji").empty();
+          $(".shouji").append("<span>账号输入有误!</span>");
+          $(".shouji").show(10);
+          setTimeout(function(){
+              $(".shouji").hide(400);
+          },1000);
+          return;
+        }else if(chang<=0){
+          $(".shouji").empty();
+          $(".shouji").append("<span>账号不能为空!</span>");
+          $(".shouji").show(10);
+          setTimeout(function(){
+              $(".shouji").hide(400);
+          },1000);
+          return;
+        }
+      });
+    },1000);
+
+    setInterval(function(){
+        $(".sign button").click(function(){
+            var chang=$(".telePhone_down .phone input").val().length;
+            var sjyz=$(".telePhone .telePhone_down .tel .code input").val().length;
+            var mima=$(".telePhone .telePhone_down .tel .code1 input").val().length;
+            if(mima==0){
+              $(".shouji").empty();
+              $(".shouji").append("<span>密码不能为空!</span>");
+              $(".shouji").show(10);
+              setTimeout(function(){
+                  $(".shouji").hide(400);
+              },1000);
+              return;
+            }else if(mima<=5){
+              $(".shouji").empty();
+              $(".shouji").append("<span>密码格式不正确!</span>");
+              $(".shouji").show(10);
+              setTimeout(function(){
+                  $(".shouji").hide(400);
+              },1000);
+              return;
+            }
+        });
+      }, 1000);
+ 
+/*********************************** ajax 验证 **********************************************/
+      /*用户名验证*/
+        sure("#uesrname",uesrname);
+      /*手机号验证*/
+        sure("#pwd",pwd);
+      
+      /*验证方法*/
+        function sure(one,two){
+          $(one).blur(function(){
+            var two = $(one).val();
+            $.ajax({
+              url:"",
+              type:"",
+              data:{two:two},
+              success:function(data){
+                //接收后台返回的结果
+                if(data==true){
+                    alert("数据正确");
+                }else{
+                    alert("数据有误");
+                }
+              },
+              error:function(e){
+                //出错
+                alert("错误！！");
+              }
+            });
+          });
+        };
+/*********************************** ajax 验证结束 **********************************************/
+    });
+  </script>
+
+  </body>
+</html>

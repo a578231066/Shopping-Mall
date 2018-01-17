@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>收货地址</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="all/city/css/mobileSelect.css" />
+    <link rel="stylesheet" href="all/city/css/public.css" />
+    <link rel="stylesheet" href="css/city.css" type="text/css" />
+  </head>
+  <body>
+    <!-- 头部分类 -->
+      <header>
+        <div class="center">
+            <div class="new">
+                <p class="fl">
+                    <a href="#"><span class="fl glyphicon glyphicon-menu-left"></span></a>
+                    收货地址
+                </p>
+            </div>
+        </div>
+      </header>
+    <!-- 头部分类结束 -->
+
+    <div class="main">
+        <div class="main_top">
+            <img src="images/shouhuoBg.jpg" />
+        </div>
+        <div class="main_down">
+            <button><span class="glyphicon glyphicon-plus"></span>新增地址</button>
+        </div>
+    </div>
+
+    <!-- 弹出层 -->
+    <div class="zhedang"></div>
+    <div class="shouji">手机</div>
+    <div class="dizhi">
+        <div class="dizhi_top">
+            添加新收货地址
+            <span class="fr glyphicon glyphicon-remove"></span>
+        </div>
+        <div class="dizhi_down">
+            <p>
+                <input type="text" placeholder="姓名" class="name" /><input type="text" placeholder="电话" class="telephone" />
+            </p>
+            <div class="address">
+                <div class="contain">
+                    <div class="fixWidth">
+                        <div class="demo">
+                            <div id="trigger"><span class="fr glyphicon glyphicon-menu-right"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="text" placeholder="详细收货地址" class="add" />
+            <button class="yes">保存</button>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="all/city/js/mobileSelect.js"></script>
+    <script src="all/city/js/city.js"></script>
+    <script src="js/city.js"></script>
+  </body>
+</html>
